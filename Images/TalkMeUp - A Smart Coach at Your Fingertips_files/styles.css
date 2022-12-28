@@ -1,0 +1,15 @@
+.mobileOnly {
+  display: none;
+}
+@media screen and (max-width: 820px) {
+  .mobileOnly {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 820px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/

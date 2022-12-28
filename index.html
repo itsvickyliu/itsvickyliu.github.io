@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vicky Liu Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3ffcd25420.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- -----Header----- -->
+        <div id="header" >
+            <div class="container">
+                <div class="small-menu" style="text-align: right;">
+                    <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i> 
+                </div>
+                <div class="small-menu">
+                    <i id="xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>  
+                </div>
+                <nav>
+                    <ul id="sidemenu1" class="s1">    
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                        <li><a href="#for-fun">Playground</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul> 
+                </nav>
+                <nav>
+                    <ul id="sidemenu2" class="s2">    
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                        <li><a href="#for-fun">Playground</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul> 
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>I'm <span>Vicky Liu</span>, a student<br>at Carnegie Mellon University</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----About----- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/AboutPic.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi there, I'm a second-year student studying Electrical and Computer Engineering with a software concentration
+                            at Carnegie Mellon University in Pittsburgh, PA. I was born and raised in Beijing, China, and I spent four years in Princeton, NJ
+                            for high school. I'm an engineer and a product manager who develops applications to serve diverse communities. I'm
+                            a writer and a debator who effectively uses words and voices to empower others. I'm a foodie and a cook who loves
+                            experimenting in the kitchen. I'm a skier and a snowboarder who adventures in glade with friends. I'm a theater lover and a
+                            stage manager who goes on journeys with characters in shows. After all, I'm a creative thinker and a passionate doer who loves
+                            exploring new opportunities.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Mobile Application Development</span><br>
+                                    using Swift and Java
+                                </li>
+                                <li><span>Full-Stack Web Development</span><br>
+                                    using Python, JavaScript, and HTML/CSS
+                                </li>
+                                <li><span>Embedded Software Development</span><br>
+                                    using C, Linux, and x86-64 Assembly Language
+                                </li>
+                                <li><span>Data Analysis</span><br>
+                                    using Python, MATLAB, and R
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Incoming Software Engineering Intern</span><br>
+                                    at Slack, a Salesforce company
+                                </li>
+                                <li><span>Research Assistant</span><br>
+                                    at Human-Computer Interaction Institute
+                                </li>
+                                <li><span>Full-Stack Engineering Intern</span><br>
+                                    at TalkMeUp
+                                </li>
+                                <li><span>Mobile Application Developer</span><br>
+                                    at Vocali
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Carnegie Mellon University</span><br>
+                                    Bachelor of Science, 2021 - 2025
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----For Tech----- -->
+        <div id="for-tech">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <div class="tech-list"> 
+                    <div class="tech" id="cener-image">
+                        <img src="Images/Vocali.jpeg">
+                        <div class="layer">
+                            <h2>Vocali Speech Therapy App</h2>
+                            <p>An iOS pathologist-approved speech therapy app with over 300 downloads, 78% of users spending 1 hr+, and 213 reporting they stutter less.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="tech" id="center-image">
+                        <img id="center-image" src="Images/TalkMeUp.png">
+                        <div class="layer">
+                            <h2>TalkMeUp Full-Stack Engineering</h2>
+                            <p>An AI-powered real-time analyzer that aids users in mastering communication.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="tech" id="center-image">
+                        <img  src="Images/cmr.png">
+                        <div class="layer">
+                            <h2>Carnegie Mellon Racing Driver Diagnostic Program</h2>
+                            <p>A Python-based automated driver data labeling script with a 98.6% of accuracy.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>  
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- -----For Fun----- -->
+        <div id="for-fun">
+            <div class="container">
+                <h1 class="sub-title">Playground</h1>
+                <div class="fun-list">
+                    <div>
+                        <i class="fa-solid fa-pencil"></i>
+                        <h2>Writing</h2>
+                        <p>My memory in words.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <h2>Filmmaking</h2>
+                        <p>My memory in motion pictures.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <h2>Photography</h2>
+                        <p>My memory in pixels.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- -----Contact----- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="social-icons">
+                            <a href="mailto:ruoyuliu@andrew.cmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/vicky-liu-0a205118a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/itsvickyliu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/7d7159bccf8da6505e42d860eca4e318" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                            <input type="text" name="_honey" style="display: none;">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu2");
+            var xmark = document.getElementById("xmark");
+            var bars = document.getElementById("bars");
+
+            function openmenu(){
+                sidemenu.style.display = "block";
+                xmark.style.display = "block";
+                bars.style.display = "none";
+                // sidemenu.setAttribute("style", "display: block;");
+            }
+            function closemenu(){
+                sidemenu.setAttribute("style", "display: none;");
+                xmark.setAttribute("style", "display: none;");
+                bars.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
