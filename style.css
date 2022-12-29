@@ -14,9 +14,9 @@ body{
     box-sizing: border-box;
     position: absolute;
 }
-.container{
-    padding: 5vh 5vw;
-}
+/* .container{
+    margin: 5vh 5vw;
+} */
 /* -----Navigation----- */
 nav ul{
     background-color: #fbfcf8;
@@ -31,7 +31,7 @@ nav ul li{
     list-style: none;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    margin-right: 4vw;
+    margin-right: 5vw;
 }
 nav ul li a{
     color: #2b2f3a;
@@ -54,16 +54,20 @@ nav ul li a:hover::after{
 }
 /* -----Header----- */
 #header{
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 100vh;
     background-image: url(Images/Subject.png);
     background-size: max(40vw, 40vh); 
     background-position-x: 100%;
     background-position-y: 100%;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .header-text{
     margin-top: 25vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     font-size: max(min(2vh, 2vw), 16px);
     width: 55vw;
 }
