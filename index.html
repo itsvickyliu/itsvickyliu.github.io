@@ -7,38 +7,17 @@
         <title>Vicky Liu Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/3ffcd25420.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
+        <div id="placeholder"></div>
+        <script src="script.js"></script>
         <!-- -----Header----- -->
         <div id="header" >
             <div class="container">
-                <div class="small-menu" style="text-align: right;">
-                    <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i> 
-                </div>
-                <div class="small-menu">
-                    <i id="xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>  
-                </div>
-                <nav>
-                    <ul id="sidemenu1" class="s1">    
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-                        <li><a href="#for-fun">Playground</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul> 
-                </nav>
-                <nav>
-                    <ul id="sidemenu2" class="s2">    
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-                        <li><a href="#for-fun">Playground</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul> 
-                </nav>
                 <div class="header-text">
                     <p>Software Developer</p>
-                    <h1>I'm <span>Vicky Liu</span>, a student<br>at Carnegie Mellon University</h1>
+                    <h1>I'm <span>Vicky Liu</span>, a student at Carnegie Mellon University</h1>
                 </div>
             </div>
         </div>
@@ -192,37 +171,5 @@
                 </div>
             </div>
         </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links")
-            var tabcontents = document.getElementsByClassName("tab-contents");
-
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-        <script>
-            var sidemenu = document.getElementById("sidemenu2");
-            var xmark = document.getElementById("xmark");
-            var bars = document.getElementById("bars");
-
-            function openmenu(){
-                sidemenu.style.display = "block";
-                xmark.style.display = "block";
-                bars.style.display = "none";
-                // sidemenu.setAttribute("style", "display: block;");
-            }
-            function closemenu(){
-                sidemenu.setAttribute("style", "display: none;");
-                xmark.setAttribute("style", "display: none;");
-                bars.style.display = "block";
-            }
-        </script>
     </body>
 </html>
