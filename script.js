@@ -35,7 +35,7 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
     '</div>'+
     '<nav>'+
         '<ul id="sidemenu1" class="s1">'+
-            '<li><a href="./index.html">Home</a></li>'+
+            '<li><a href="./index.html#header">Home</a></li>'+
             '<li><a href="./index.html#about">About</a></li>'+
             '<li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
             '<li><a href="./index.html#for-fun">Playground</a></li>'+
@@ -44,7 +44,7 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
     '</nav>'+
     '<nav>'+
         '<ul id="sidemenu2" class="s2">'+   
-            '<li><a href="./index.html">Home</a></li>'+
+            '<li><a href="./index.html#header">Home</a></li>'+
             '<li><a href="./index.html#about">About</a></li>'+
             '<li><a href="./tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
             '<li><a href="./index.html#for-fun">Playground</a></li>'+
