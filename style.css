@@ -461,6 +461,9 @@ article div a{
     article div{
         width: 100%;
     }
+    .social-icons{
+        text-align: center;
+    }
     .media{
         width: 70%;
     }
