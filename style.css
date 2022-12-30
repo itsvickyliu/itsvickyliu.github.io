@@ -203,13 +203,15 @@ nav ul li a::after{
     font-size: max(min(2vh, 2vw), 16px);
 }
 .fun-list div h2{
-    font-size: max(min(3vh, 3vw), 30px);
+    font-size: max(min(2vh, 2vw), 16px);
     font-weight: 600;
+    margin-bottom: 1vh;
 }
 .fun-list div a{
     text-decoration: none;
     color: #2b2f3a;
     font-size: max(min(2vh, 2vw), 16px);
+    margin-top: 1vh;
 }
 @media (min-width: 651px){
     .fun-list div:hover{
@@ -312,6 +314,9 @@ nav ul li a::after{
     }
 }
 /* -----Contact----- */
+#contact{
+    padding: 10vh 5vw 0vh;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -319,12 +324,12 @@ nav ul li a::after{
     flex-basis: 60%;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 3vh;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
+    font-size: max(min(5vh, 5vw), 30px);
+    margin-right: 2vw;
     color: #bc8da0;
     display: inline-block;
     transition: 0.3s;
@@ -337,23 +342,23 @@ nav ul li a::after{
 }
 .contact-right form{
     width: 100%;
+    text-align: center;
 }
 form input, form textarea{
-    width: 100%;
+    width: 90%;
     border: 1px solid #a04668;
     border-radius: 5px;
     outline: none;
     background: #fbfcf8;
-    padding: 15px;
-    margin: 15px 0;
+    padding: 1vh 1vw;
+    margin: 1vh 0;
     color: #2b2f3a;
-    font-size: 16px;
+    font-size: max(min(2vh, 2vw), 16px);
     line-height: 1.5;
     resize: vertical;
 }
 form .btn{
     padding: 14px 60px;
-    margin-top: 15px;
     cursor: pointer;
 }
 /* -----Tech Portfolio----- */
