@@ -102,7 +102,7 @@ nav ul li a:hover::after{
 }
 /* -----About----- */
 #about{
-    padding: 10vh 5vw;
+    padding: 10vh 5vw 0vh;
 }
 .row{
     display: flex;
@@ -127,6 +127,7 @@ nav ul li a:hover::after{
     font-size: max(min(7vh, 7vw), 30px);
     color: #a04668;
     margin-bottom: 3vh;
+    line-height: 1.5;
 }
 .tab-titles{
     display: flex;
@@ -214,7 +215,7 @@ nav ul li a:hover::after{
 }
 /* -----For Tech----- */
 #for-tech{
-    padding: 30px 0;
+    padding: 10vh 5vw 0vh;
 }
 .tech-list{
     display: grid;
@@ -225,6 +226,8 @@ nav ul li a:hover::after{
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    margin: auto;
+    max-width: 350px;
 }
 #center-image{
     display: flex;
@@ -250,22 +253,22 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 3vw;
     text-align: center;
-    font-size: 16px;
+    font-size: max(min(2vh, 2vw), 16px);
     line-height: 1.5;
     transition: 0.3s;
 }
 .layer h2{
-    font-size: 20px;
+    font-size: max(min(2vh, 2vw), 16px);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 .layer a{
     text-decoration: none;
     color: #2b2f3a;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 1vh;
+    font-size: max(min(2vh, 2vw), 16px);
     display: inline-block;
 }
 .tech:hover img{
@@ -279,14 +282,14 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 5vh auto;
     width: fit-content;
     border: 1px solid #a04668;
     padding: 14px 30px;
     border-radius: 5px;
     text-decoration: none;
     color: #2b2f3a;
-    font-size: 16px;
+    font-size: max(min(2vh, 2vw), 16px);
     transition: 0.3s;
     background-color: transparent;
 }
@@ -425,8 +428,8 @@ article div a:hover{
     .about-col-1{
         display: none;
     }
-    .layer h2{
-        font-size: 20px;
+    .tech {
+        max-width: 300px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
