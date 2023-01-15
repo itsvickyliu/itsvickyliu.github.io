@@ -174,142 +174,6 @@ nav ul li a::after{
 .tab-contents.active-tab{
     display: block;
 }
-/* -----For Fun----- */
-#for-fun{
-    padding: 10vh 5vw 0vh;
-}
-.fun-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: min(10vh, 10vw);
-    place-items: center;
-}
-.fun-list div{
-    display: inline-block;
-    background: rgba(188,141,160, 0.5);
-    font-size: 16px;
-    border-radius: 5px;
-    color: #2b2f3a;
-    transition: 0.3s;
-    text-align: center;
-    max-width: 400px;
-    padding: 3vh 3vw;
-    width: 100%;
-    height: 100%;
-}
-.fun-list div i{
-    font-size: 16px;
-}
-.fun-list div h2{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 1vh;
-}
-.fun-list div a{
-    text-decoration: none;
-    color: #2b2f3a;
-    font-size: 16px;
-    margin-top: 1vh;
-}
-@media (min-width: 651px){
-    .fun-list div:hover{
-        transform: translateY(-10px);
-        background: rgba(188,141,160, 0.6);
-    }
-    .fun-list div a:hover{
-        color: #a04668;
-    }
-}
-/* -----For Tech----- */
-#for-tech{
-    padding: 10vh 5vw 0vh;
-}
-.tech-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: min(10vh, 10vw);
-}
-.tech{
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    max-width: 350px;
-}
-#center-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tech img{
-    width: 100%;
-    border-radius: 5px;
-    display: flex;
-    transition: 0.3s;
-}
-.layer{
-    width: 100%;
-    height: 100%;
-    background: rgba(251,252,248,0.95);
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 3vw;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s;
-}
-.layer h2{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 1vh;
-}
-.layer a{
-    text-decoration: none;
-    color: #2b2f3a;
-    margin-top: 1vh;
-    font-size: 16px;
-    display: inline-block;
-}
-@media (min-width: 651px){
-    .tech:hover img{
-        transform: scale(1.1);
-    }
-    .layer{
-        height: 0%;
-    }
-    .tech:hover .layer{
-        height: 100%;
-    }
-    .layer a:hover{
-        color: #a04668;
-    }
-}
-.btn{
-    display: block;
-    margin: 5vh auto;
-    width: fit-content;
-    border: 1px solid #a04668;
-    padding: 14px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #2b2f3a;
-    font-size: 16px;
-    transition: 0.3s;
-    background-color: transparent;
-}
-@media (min-width: 651px){
-    .btn:hover{
-        background-color: #a04668;
-        color: #fbfcf8;
-    }
-}
 /* -----Contact----- */
 #contact{
     padding: 10vh 5vw 5vh;
@@ -358,6 +222,25 @@ form .btn{
     padding: 14px 60px;
     cursor: pointer;
 }
+.btn{
+    display: block;
+    margin: 5vh auto;
+    width: fit-content;
+    border: 1px solid #a04668;
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2b2f3a;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: transparent;
+}
+@media (min-width: 651px){
+    .btn:hover{
+        background-color: #a04668;
+        color: #fbfcf8;
+    }
+}
 /* -----Tech Portfolio----- */
 #tech-portfolio{
     padding: 10vh 5vw;
@@ -381,12 +264,14 @@ form .btn{
     text-decoration: none;
     color: #2b2f3a;
     margin-top: 1vh;
+    text-align: center;
 }
 .card-date{
     font-size: 14px;
     font-weight: 400;
     display: inline-block;
     color: #2b2f3a;
+    text-align: center;
 }
 .card-content{
     font-size: 16px;
@@ -394,10 +279,12 @@ form .btn{
 }
 .card-script-name{
     margin-bottom: 0;
+    text-align: center;
 }
 .card-subtitle{
     margin-bottom: 0;
     font-weight: 600;
+    text-align: center;
 }
 .card-abstract{
     margin-top: 3vh;
@@ -427,8 +314,10 @@ form .btn{
     display: flex;
     flex-direction: column;
     break-inside: avoid;
-    padding: 5vh 2.5vw 0vh;
+    padding-top: 5vh;
     align-items: center;
+    margin: auto;
+    width: 80%;
 } 
 .card-img{
     width: 80%;
@@ -493,9 +382,6 @@ form .btn{
     }
     .about-col-1{
         display: none;
-    }
-    .tech {
-        max-width: 300px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
