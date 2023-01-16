@@ -313,6 +313,7 @@ form .btn{
 .grid{
     column-count: 3;
     text-align: center;
+    align-items: center;
 }
 .grid-item{
     display: flex;
@@ -322,7 +323,7 @@ form .btn{
     align-items: center;
     margin: auto;
     width: 80%;
-} 
+}
 .card-img{
     width: 80%;
     border-radius: 5px;
@@ -331,7 +332,7 @@ form .btn{
 /* -----Post----- */
 .post{
     padding: 10vh 5vw 5vh;
-    width: 100vw;
+    width: 100%;
 }
 .post-title:hover{
     color: #a04668;
@@ -343,7 +344,8 @@ form .btn{
     align-items: center;
 }
 .post-img{
-    margin: 3vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 /* -----CSS for small screen----- */
 @media (max-width: 650px){
@@ -409,6 +411,6 @@ form .btn{
     }
     /* -----Playground----- */
     .grid{
-        column-count: 2;
+        column-count: 1;
     }
 }
