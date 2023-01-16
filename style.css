@@ -332,7 +332,8 @@ form .btn{
 /* -----Post----- */
 .post{
     padding: 10vh 5vw 5vh;
-    width: 100%;
+    width: 90vw;
+    margin-left: 5vw;
 }
 .post-title:hover{
     color: #a04668;
