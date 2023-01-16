@@ -36,6 +36,7 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
             '<li><a href="/index.html#header">Home</a></li>'+
             '<li><a href="/index.html#about">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
+            '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
             '<li><a href="/index.html#contact">Contact</a></li>'+
         '</ul>'+
@@ -45,6 +46,7 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
             '<li><a href="/index.html#header">Home</a></li>'+
             '<li><a href="/index.html#about">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
+            '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
             '<li><a href="/index.html#contact">Contact</a></li>'+
         '</ul>'+

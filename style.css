@@ -138,7 +138,7 @@ nav ul li a::after{
 }
 .tab-titles{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 .tab-links{
     margin-right: 5vw;
@@ -249,7 +249,8 @@ form .btn{
 }
 #tech-portfolio article{
     display: flex;
-    padding: 30px;
+    margin: 5vh;
+    margin-top: 0;
     scroll-margin-top: 10vh;
 }
 #tech-portfolio article div{
@@ -259,6 +260,7 @@ form .btn{
 #tech-portfolio .media{
     width: 20%;
     margin: auto;
+    border-radius: 5px;
 }
 .card-title{
     font-size: 1rem;
@@ -329,6 +331,14 @@ form .btn{
     width: 80%;
     border-radius: 5px;
     align-items: center;
+}
+/* -----Courses----- */
+#course-list{
+    padding: 10vh 5vw 5vh;
+}
+.course-content{
+    display: flex;
+    justify-content: center;
 }
 /* -----Post----- */
 .post{
