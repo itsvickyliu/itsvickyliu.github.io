@@ -35,7 +35,7 @@ nav ul li{
 nav ul li a{
     color: #2b2f3a;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     position: relative;
 }
 nav ul li a::after{
@@ -71,7 +71,7 @@ nav ul li a::after{
     top: 0;
     right: 0;
     /* 10 is the length of "Playground" */
-    width: max(16px*10, 40vw);
+    width: max(10rem, 40vw);
     height: 100%;
     padding-top: 5vh;
     text-align: center;
@@ -97,14 +97,15 @@ nav ul li a::after{
 .header-text{
     padding-top: 25vh;
     padding-left: 5vw;
-    font-size: 16px;
+    font-size: 1rem;
     width: 55vw;
 }
 .header-text h1{
-    font-size: max(min(7vh, 7vw), 30px);
+    font-size: max(min(7vh, 7vw), 1.8rem);
 }
 .header-text h1 span{
     color:#a04668;
+    font-size: max(min(7vh, 7vw), 1.8rem);
 }
 /* -----About----- */
 #about{
@@ -126,10 +127,10 @@ nav ul li a::after{
 }
 .about-col-2{
     flex-basis: 50%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .sub-title{
-    font-size: 30px;
+    font-size: 2rem;
     color: #a04668;
     margin-bottom: 3vh;
 }
@@ -142,7 +143,7 @@ nav ul li a::after{
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    font-size: 14px;
+    font-size: 1rem;
 }
 .tab-links::after{
     content: ' ';
@@ -189,9 +190,9 @@ nav ul li a::after{
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
     margin-right: 1vw;
     margin-left: 1vw;
+    font-size: 2rem;;
     color: #bc8da0;
     display: inline-block;
     transition: 0.3s;
@@ -215,7 +216,7 @@ form input, form textarea{
     padding: 1vh 1vw;
     margin: 1vh 0;
     color: #2b2f3a;
-    font-size: 16px;
+    font-size: 1rem;
     resize: vertical;
 }
 form .btn{
@@ -231,7 +232,7 @@ form .btn{
     border-radius: 5px;
     text-decoration: none;
     color: #2b2f3a;
-    font-size: 16px;
+    font-size: 1rem;
     transition: 0.3s;
     background-color: transparent;
 }
@@ -259,22 +260,25 @@ form .btn{
     margin: auto;
 }
 .card-title{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     color: #2b2f3a;
     margin-top: 1vh;
     text-align: center;
 }
+.tech-title{
+    text-align: left;
+}
 .card-date{
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 400;
     display: inline-block;
     color: #2b2f3a;
     text-align: center;
 }
 .card-content{
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 3vh;
 }
 .card-script-name{
@@ -291,7 +295,7 @@ form .btn{
 }
 #tech-portfolio article div a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     display: inline-block;
     color: #a04668;
     margin-bottom: 3vh;
@@ -355,7 +359,7 @@ form .btn{
         padding: 2vw;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 2rem;
         display: block;
     }
     .s1{
@@ -370,13 +374,17 @@ form .btn{
         overflow: hidden;
         padding-top: 2vw;
         top: 2vh; 
-        right: max(16px*7, 30vw);
+        right: max(7rem, 30vw);
         cursor: pointer;
         color: #2b2f3a;
-        font-size: 30px;
+        font-size: 2rem;
         z-index: 4;
     }
     /* -----Other Homepage----- */
+    .header-text{
+        width: 100%;
+        padding-right: 5vw;
+    }
     .about-col-2{
         flex-basis: 100%;
     }
