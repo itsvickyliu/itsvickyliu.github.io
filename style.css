@@ -44,17 +44,17 @@ nav ul li a{
     position: relative;
     font-size: 1rem;
 }
-nav ul li a::after{
-    content: ' ';
-    width: 0;
-    height: 3px;
-    background: #bc8da0;
-    position: absolute;
-    left: 0;
-    bottom: -0.5vh;
-    transition: 0.3s;
-}
 @media (min-width: 651px){
+    nav ul li a::after{
+        content: ' ';
+        width: 0;
+        height: 3px;
+        background: #bc8da0;
+        position: absolute;
+        left: 0;
+        bottom: -0.5vh;
+        transition: 0.3s;
+    }
     nav ul li a:hover::after{
         width: 100%;
     }
@@ -424,7 +424,7 @@ form .btn{
         margin: 1vh auto;
     }
     /* -----Tech Portfolio----- */
-    #tech-portfolio{
+    #tech-portfolio article{
         text-align: center;
     }
     .tech-title{
