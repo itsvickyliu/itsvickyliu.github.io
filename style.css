@@ -39,6 +39,7 @@ nav ul li a{
     color: #2b2f3a;
     text-decoration: none;
     position: relative;
+    font-size: 1rem;
 }
 nav ul li a::after{
     content: ' ';
@@ -73,7 +74,7 @@ nav ul li a::after{
     top: 0;
     right: 0;
     /* 10 is the length of "Playground" */
-    width: max(10*16px, 40vw);
+    width: max(10rem, 40vw);
     height: 100%;
     padding-top: 5vh;
     text-align: center;
@@ -100,13 +101,14 @@ nav ul li a::after{
     padding-top: 25vh;
     padding-left: 5vw;
     width: 55vw;
+    font-size: 1rem;
 }
 .header-text h1{
-    font-size: max(min(7vh, 7vw), 30px);
+    font-size: max(min(7vh, 7vw), 2rem);
 }
 .header-text h1 span{
     color:#a04668;
-    font-size: max(min(7vh, 7vw), 30px);
+    font-size: max(min(7vh, 7vw), 2rem);
 }
 /* -----About----- */
 #about{
@@ -128,9 +130,10 @@ nav ul li a::after{
 }
 .about-col-2{
     flex-basis: 50%;
+    font-size: 1rem;
 }
 .sub-title{
-    font-size: 30px;
+    font-size: 2rem;
     color: #a04668;
     margin-bottom: 3vh;
 }
@@ -143,6 +146,7 @@ nav ul li a::after{
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    font-size: 1rem;
 }
 .tab-links::after{
     content: ' ';
@@ -167,9 +171,11 @@ nav ul li a::after{
 .tab-contents ul li span{
     color: #a04668;
     font-weight: 600;
+    font-size: 1rem;
 }
 .tab-contents{
     display: none;
+    font-size: 1rem;
 }
 .tab-contents.active-tab{
     display: block;
@@ -190,7 +196,7 @@ nav ul li a::after{
 .social-icons a{
     text-decoration: none;
     margin-right: 2vw;
-    font-size: 30px;
+    font-size: 2rem;
     color: #bc8da0;
     display: inline-block;
     transition: 0.3s;
@@ -215,6 +221,7 @@ form input, form textarea{
     margin: 1vh 0;
     color: #2b2f3a;
     resize: vertical;
+    font-size: 1rem;
 }
 form .btn{
     padding: 14px 60px;
@@ -231,6 +238,7 @@ form .btn{
     color: #2b2f3a;
     transition: 0.3s;
     background-color: transparent;
+    font-size: 1rem;
 }
 @media (min-width: 651px){
     .btn:hover{
@@ -240,7 +248,7 @@ form .btn{
 }
 /* -----Tech Portfolio----- */
 #tech-portfolio{
-    padding: 10vh 5vw;
+    padding: 10vh 5vw 5vh;
 }
 #tech-portfolio article{
     display: flex;
@@ -263,6 +271,7 @@ form .btn{
     color: #2b2f3a;
     margin-top: 1vh;
     text-align: center;
+    font-size: 1rem;
 }
 .tech-title{
     text-align: left;
@@ -273,9 +282,11 @@ form .btn{
     display: inline-block;
     color: #2b2f3a;
     text-align: center;
+    font-size: 0.8rem;
 }
 .card-content{
     margin-bottom: 3vh;
+    font-size: 1rem;
 }
 .card-script-name{
     margin-bottom: 0;
@@ -297,6 +308,7 @@ form .btn{
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 3vh;
+    font-size: 1rem;
 }
 @media (min-width: 651px){
     #tech-portfolio article div a:hover{
@@ -333,6 +345,7 @@ form .btn{
 .course-content{
     display: flex;
     justify-content: center;
+    font-size: 1rem;
 }
 /* -----Post----- */
 .post{
@@ -345,6 +358,7 @@ form .btn{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
 }
 .post-img{
     margin-top: 3vh;
@@ -364,7 +378,7 @@ form .btn{
         padding: 2vw;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 2rem;
         display: block;
     }
     .s1{
@@ -382,7 +396,7 @@ form .btn{
         right: max(7*16px, 30vw);
         cursor: pointer;
         color: #2b2f3a;
-        font-size: 30px;
+        font-size: 2rem;
         z-index: 4;
     }
     /* -----Other Homepage----- */
@@ -398,6 +412,9 @@ form .btn{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    .btn{
+        margin: 1vh auto;
     }
     /* -----Tech Portfolio----- */
     #tech-portfolio{
