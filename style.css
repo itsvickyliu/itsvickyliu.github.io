@@ -10,6 +10,8 @@ html{
     box-sizing: border-box;
     font-size: 16px;
     text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
 }
 body{
     background: #fbfcf8;
@@ -308,8 +310,7 @@ form .btn{
     text-decoration: none;
     display: inline-block;
     color: #a04668;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-right: 2vw;
     margin-bottom: 3vh;
     font-size: 1rem;
 }
