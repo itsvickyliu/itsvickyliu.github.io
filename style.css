@@ -314,6 +314,9 @@ form .btn{
     margin-bottom: 3vh;
     font-size: 1rem;
 }
+#tech-portfolio article div a span{
+    white-space: nowrap;
+}
 @media (min-width: 651px){
     #tech-portfolio article div a:hover{
         color: #2b2f3a;
