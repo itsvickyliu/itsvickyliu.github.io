@@ -33,22 +33,18 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
     '</div>'+
     '<nav>'+
         '<ul id="sidemenu1" class="s1">'+
-            '<li><a href="/index.html#header">Home</a></li>'+
-            '<li><a href="/index.html#about">About</a></li>'+
+            '<li><a href="/index.html#header">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
             '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
-            '<li><a href="/index.html#contact">Contact</a></li>'+
         '</ul>'+
     '</nav>'+
     '<nav>'+
         '<ul id="sidemenu2" class="s2">'+   
-            '<li><a href="/index.html#header">Home</a></li>'+
-            '<li><a href="/index.html#about">About</a></li>'+
+            '<li><a href="/index.html#header">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
             '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
-            '<li><a href="/index.html#contact">Contact</a></li>'+
         '</ul>'+
     '</nav>';
 

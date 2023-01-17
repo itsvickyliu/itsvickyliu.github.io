@@ -8,6 +8,7 @@
 html{
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body{
     background: #fbfcf8;
@@ -295,14 +296,18 @@ form .btn{
 }
 .card-abstract{
     margin-top: 3vh;
+    text-align: left;
 }
 #tech-portfolio article div a{
     text-decoration: none;
     font-size: 1rem;
     display: inline-block;
     color: #a04668;
+    margin-left: 1vw;
+    margin-right: 1vw;
     margin-bottom: 3vh;
-    margin-right: 3vh;
+    /* margin-bottom: 3vh;
+    margin-right: 3vh; */
 }
 @media (min-width: 651px){
     #tech-portfolio article div a:hover{
@@ -406,6 +411,12 @@ form .btn{
         flex-basis: 100%;
     }
     /* -----Tech Portfolio----- */
+    #tech-portfolio{
+        text-align: center;
+    }
+    .tech-title{
+        text-align: center;
+    }
     #tech-portfolio article{
         flex-direction: column;
     }
