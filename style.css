@@ -107,11 +107,11 @@ nav ul li a{
     font-size: 1rem;
 }
 .header-text h1{
-    font-size: max(min(7vh, 7vw), 2rem);
+    font-size: max(7vw, 2rem);
 }
 .header-text h1 span{
     color:#a04668;
-    font-size: max(min(7vh, 7vw), 2rem);
+    font-size: max(7vw, 2rem);
 }
 /* -----About----- */
 #about{
