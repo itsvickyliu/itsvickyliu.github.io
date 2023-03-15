@@ -107,11 +107,11 @@ nav ul li a{
     font-size: 1rem;
 }
 .header-text h1{
-    font-size: max(7vw, 2rem);
+    font-size: max(min(7vw, 7vh), 2rem);
 }
 .header-text h1 span{
     color:#a04668;
-    font-size: max(7vw, 2rem);
+    font-size: max(min(7vw, 7vh), 2rem);
 }
 /* -----About----- */
 #about{
@@ -405,6 +405,13 @@ form .btn{
         color: #2b2f3a;
         font-size: 2rem;
         z-index: 4;
+    }
+    .header-text h1{
+        font-size: max(7vw, 2rem);
+    }
+    .header-text h1 span{
+        color:#a04668;
+        font-size: max(7vw, 2rem);
     }
     /* -----Other Homepage----- */
     .header-text{
