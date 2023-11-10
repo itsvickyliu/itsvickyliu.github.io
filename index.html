@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vicky Liu | Website</title>
+        <link rel="icon" href="/Images/favicon.ico">
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://kit.fontawesome.com/3ffcd25420.js" crossorigin="anonymous"></script>  
+    </head>
+    <body>
+        <div id="placeholder"></div>
+        <!-- -----Header----- -->
+        <div id="header" >
+            <div class="container">
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>I'm <span>Vicky Liu</span>, a student at Carnegie Mellon University</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----About----- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/AboutPic.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a third-year undergraduate student studying Electrical and Computer Engineering 
+                            with a software concentration at Carnegie Mellon University in Pittsburgh, PA. I am both an 
+                            engineer and a product manager, developing applications to serve diverse communities. Additionally, 
+                            I'm a writer and a debater who effectively uses words and voices to empower others. In the kitchen, 
+                            I'm a foodie and a cook who loves experimenting with flavors. Outdoors, I'm a skier and a snowboarder, 
+                            often venturing into glades with friends. As a theater lover and a stage manager, I embark on journeys 
+                            with characters in shows. Above all, I'm a creative thinker and a passionate doer who loves exploring 
+                            new opportunities.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Full-Stack Web Development</span><br>
+                                    using Python (Django), JavaScript/TypeScript (React, Node.js, AJAX), AWS, and HTML/CSS
+                                </li>
+                                <li><span>Computer Systems (Software, Embedded)</span><br>
+                                    using C, ARM/x86-64 Assembly, FreeRTOS, and STM32
+                                </li>
+                                <li><span>Mobile Application Development</span><br>
+                                    using Swift and Java
+                                </li>
+                                <li><span>Machine Learning</span><br>
+                                    using Python (NumPy, Pandas, PyTorch)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>Teaching Assistant</span><br>
+                                    at School of Computer Science, Carnegie Mellon University
+                                </li>
+                                <li><span>iOS Software Engineering Intern</span><br>
+                                    at Slack, Salesforce
+                                </li>
+                                <li><span>Research Assistant</span><br>
+                                    at Human-Computer Interaction Institute, Carnegie Mellon University
+                                </li>
+                                <li><span>Full-Stack Engineering Intern</span><br>
+                                    at TalkMeUp
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Carnegie Mellon University</span><br>
+                                    Bachelor of Science, 2021 - 2025
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----Contact----- -->
+        <div id="contact">
+            <div class="container">
+                    <div class="social-icons">
+                        <a href="mailto:ruoyuliu@andrew.cmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/vicky-liu-0a205118a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/itsvickyliu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>    
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>

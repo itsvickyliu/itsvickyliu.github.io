@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    box-sizing: inherit;
+    line-height: 1.5;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+}
+body{
+    background: #fbfcf8;
+    color: #2b2f3a;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* .container{
+    margin: 5vh 5vw;
+} */
+/* -----Navigation----- */
+nav ul{
+    background-color: #fbfcf8;
+    text-align: right;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 2vh 3vw;
+}
+nav ul li a{
+    color: #2b2f3a;
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
+}
+@media (min-width: 651px){
+    nav ul li a::after{
+        content: ' ';
+        width: 0;
+        height: 3px;
+        background: #bc8da0;
+        position: absolute;
+        left: 0;
+        bottom: -0.5vh;
+        transition: 0.3s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+}
+/* -----Navigation for smaller screen----- */
+@media (min-width: 651px){
+    .small-menu i{
+        display: none !important;
+    }
+    .s2{
+        display: none !important;
+    }
+}
+.small-menu i{
+    display: none;
+}
+.s2{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* 10 is the length of "Playground" */
+    width: max(10rem, 40vw);
+    height: 100%;
+    padding-top: 5vh;
+    text-align: center;
+    z-index: 3;
+}
+.s2 li{
+    display: block;
+    margin-top: 5vh;
+}
+.s2 li a:hover::after{
+    width: 0;
+}
+/* -----Header----- */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/Subject.png);
+    background-size: 40vw; 
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+.header-text{
+    padding-top: 25vh;
+    padding-left: 5vw;
+    width: 55vw;
+    font-size: 1rem;
+}
+.header-text h1{
+    font-size: max(min(7vw, 7vh), 2rem);
+}
+.header-text h1 span{
+    color:#a04668;
+    font-size: max(min(7vw, 7vh), 2rem);
+}
+/* -----About----- */
+#about{
+    padding: 10vh 5vw 0vh;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 5px;
+}
+.about-col-2{
+    flex-basis: 50%;
+    font-size: 1rem;
+}
+.sub-title{
+    font-size: 2rem;
+    color: #a04668;
+    margin-bottom: 3vh;
+}
+.tab-titles{
+    display: flex;
+    margin-top: 3vh;
+}
+.tab-links{
+    margin-right: 5vw;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: #bc8da0;
+    position: absolute;
+    left: 0;
+    bottom: -0.5vh;
+    transition: 0.3s;
+}
+.tab-links.active-link{
+    color:#a04668;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    margin-top: 1vh;
+    list-style-position: inside;
+}
+.tab-contents ul li span{
+    color: #a04668;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.tab-contents{
+    display: none;
+    font-size: 1rem;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* -----Contact----- */
+#contact{
+    padding: 10vh 5vw 5vh;
+    display: flex;
+    justify-content: center;
+}
+.social-icons{
+    margin-top: 3vh;
+}
+.social-icons a{
+    text-decoration: none;
+    margin-right: 2vw;
+    font-size: 2rem;
+    color: #bc8da0;
+    display: inline-block;
+    transition: 0.3s;
+}
+@media (min-width: 651px){
+    .social-icons a:hover{
+        color:#a04668;
+        transform: translateY(-5px);
+    }
+}
+.contact-right form{
+    width: 100%;
+    text-align: center;
+}
+form input, form textarea{
+    width: 90%;
+    border: 1px solid #a04668;
+    border-radius: 5px;
+    outline: none;
+    background: #fbfcf8;
+    padding: 1vh 1.5vw;
+    margin: 1vh 0;
+    color: #2b2f3a;
+    resize: vertical;
+    font-size: 1rem;
+    font-weight: 400;
+}
+form .btn{
+    padding: 14px 60px;
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    margin: 5vh auto;
+    width: fit-content;
+    border: 1px solid #a04668;
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2b2f3a;
+    transition: 0.3s;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media (min-width: 651px){
+    .btn:hover{
+        background-color: #a04668;
+        color: #fbfcf8;
+    }
+}
+/* -----Tech Portfolio----- */
+#tech-portfolio{
+    padding: 10vh 5vw 5vh;
+}
+#tech-portfolio article{
+    display: flex;
+    margin: 5vh;
+    margin-top: 0;
+    scroll-margin-top: 10vh;
+}
+#tech-portfolio article div{
+    width: 50%;
+    margin: auto;
+}
+#tech-portfolio .media{
+    width: 20%;
+    margin: auto;
+    border-radius: 5px;
+}
+.card-title{
+    font-weight: 600;
+    text-decoration: none;
+    color: #2b2f3a;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 1rem;
+}
+.tech-title{
+    text-align: left;
+}
+.card-date{
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    color: #2b2f3a;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.card-content{
+    margin-bottom: 3vh;
+    font-size: 1rem;
+}
+.card-script-name{
+    margin-bottom: 0;
+    text-align: center;
+}
+.card-subtitle{
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+}
+.card-abstract{
+    margin-top: 3vh;
+    text-align: left;
+}
+#tech-portfolio article div a{
+    text-decoration: none;
+    display: inline-block;
+    color: #a04668;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+}
+#tech-portfolio article div a span{
+    white-space: nowrap;
+}
+@media (min-width: 651px){
+    #tech-portfolio article div a:hover{
+        color: #2b2f3a;
+    }
+}
+/* -----Playground----- */
+#playground{
+    padding: 10vh 5vw 5vh;
+}
+.grid{
+    column-count: 3;
+    text-align: center;
+    align-items: center;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    break-inside: avoid;
+    padding-top: 5vh;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.card-img{
+    width: 80%;
+    border-radius: 5px;
+    align-items: center;
+}
+/* -----Courses----- */
+#course-list{
+    padding: 10vh 5vw 5vh;
+}
+.course-content{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+/* -----Post----- */
+.post{
+    padding: 10vh 5vw 5vh;
+}
+.post-title:hover{
+    color: #a04668;
+}
+.post-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.post-img{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+/* -----CSS for small screen----- */
+@media (max-width: 650px){
+    /* -----Header----- */
+    .small-menu .fa-bars{
+        color: #2b2f3a;
+        z-index: 2;
+        position: fixed;
+        overflow: hidden;
+        top: 2vh;
+        right: 3vw;
+        background-color: #fbfcf8;
+        padding: 2vw;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 2rem;
+        display: block;
+    }
+    .s1{
+        display: none;
+    }
+    .s2{
+        display: none;
+    }
+    .small-menu .fa-xmark{
+        display: none;
+        position: fixed;
+        overflow: hidden;
+        padding-top: 2vw;
+        top: 2vh; 
+        right: max(7*16px, 30vw);
+        cursor: pointer;
+        color: #2b2f3a;
+        font-size: 2rem;
+        z-index: 4;
+    }
+    #header{
+        background-size: 80vw; 
+    }
+    /* -----Other Homepage----- */
+    .header-text{
+        width: 100%;
+        padding-right: 5vw;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        display: none;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .btn{
+        margin: 1vh auto;
+    }
+    /* -----Tech Portfolio----- */
+    #tech-portfolio article{
+        text-align: center;
+    }
+    .tech-title{
+        text-align: center;
+    }
+    #tech-portfolio article{
+        flex-direction: column;
+    }
+    #tech-portfolio article div{
+        width: 100%;
+    }
+    .social-icons{
+        text-align: center;
+    }
+    #tech-portfolio .media{
+        width: 70%;
+    }
+    /* -----Playground----- */
+    .grid{
+        column-count: 1;
+    }
+}
