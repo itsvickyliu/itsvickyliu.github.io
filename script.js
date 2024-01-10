@@ -35,7 +35,6 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
         '<ul id="sidemenu1" class="s1">'+
             '<li><a href="/index.html">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
-            '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
         '</ul>'+
     '</nav>'+
@@ -43,7 +42,6 @@ var nav = '<div class="small-menu" style="text-align: right;">'+
         '<ul id="sidemenu2" class="s2">'+   
             '<li><a href="/index.html">About</a></li>'+
             '<li><a href="/tech.html" target="_blank" rel="noopener noreferrer">Portfolio</a></li>'+
-            '<li><a href="/courses.html" target="_blank" rel="noopener noreferrer">Courses</a></li>'+
             '<li><a href="/playground.html" target="_blank" rel="noopener noreferrer">Playground</a></li>'+
         '</ul>'+
     '</nav>';
